@@ -1,6 +1,6 @@
-class tooltip {
+class tooltip extends HTMLElement {
     constructor() {
-
+        super();
     }
 }
 
