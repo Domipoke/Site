@@ -6,4 +6,4 @@ class tooltip {
 
 
 //Add element
-customElements.define("tool-tip", tooltip)
+customElements.define("tool-tip", tooltip) 
