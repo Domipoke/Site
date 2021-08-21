@@ -1,9 +1,10 @@
 class tooltip extends HTMLElement {
     constructor() {
-        super();
+        super()
     }
 }
 
 
 //Add element
 customElements.define("tool-tip", tooltip) 
+//
