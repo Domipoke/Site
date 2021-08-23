@@ -1,9 +1,9 @@
-tool-tip {
+tool-tip tool-tip-text {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
 }
-tool-tip * {
+tool-tip tool-tip-content {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -16,7 +16,7 @@ tool-tip * {
     position: absolute;
     z-index: 1;
 }
-tool-tip:hover * {
+tool-tip-text:hover + tool-tip-content {
     visibility: visible;
 }
 tool-tip[facing="top"] {
