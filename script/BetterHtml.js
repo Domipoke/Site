@@ -20,4 +20,4 @@ class tooltipcontent extends HTMLElement {
 customElements.define("tool-tip", tooltip) 
 customElements.define("tool-tip-text", tooltiptext) 
 customElements.define("tool-tip-content", tooltipcontent) 
-//
+////
