@@ -18,6 +18,6 @@ class tooltipcontent extends HTMLElement {
 
 //Add element
 customElements.define("tool-tip", tooltip) 
-customElements.define("tool-tip-text", tooltip) 
-customElements.define("tool-tip-content", tooltip) 
+customElements.define("tool-tip-text", tooltiptext) 
+customElements.define("tool-tip-content", tooltipcontent) 
 //
