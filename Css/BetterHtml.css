@@ -1,53 +1,86 @@
-tool-tip tool-tip-text {
+/*tool tip*/
+tool-tip[facing="top"] {
+    color: tan
+}
+tool-tip[facing="bottom"] {
+    color: blue
+}
+tool-tip[facing="left"] {
+    color: lime
+}
+tool-tip[facing="right"] {
+    color: red
+}
+/* tool tip text*/
+tool-tip[facing="top"] tool-tip-text {
     position: relative;
     display: inline-block;
 }
-tool-tip tool-tip-content {
-
-   
-    /* Position the tooltip text - see examples below! */
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
+tool-tip[facing="bottom"] tool-tip-text {
+    position: relative;
+    display: inline-block;
 }
-tool-tip-text:hover + tool-tip-content {
-    visibility: visible;
+tool-tip[facing="left"] tool-tip-text {
+    position: relative;
+    display: inline-block;
 }
-tool-tip[facing="top"] {
-
+tool-tip[facing="right"] tool-tip-text {
+    position: relative;
+    display: inline-block;
 }
-tool-tip[facing="bottom"] {
-
-}
-tool-tip[facing="left"] {
-
-}
-tool-tip[facing="righ"] {
-    
-}
-
+/*tool tip content*/
 tool-tip[facing="top"] tool-tip-content {
     width: 120px;
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
+    /*-*/
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
 }
 tool-tip[facing="bottom"] tool-tip-content {
     width: 120px;
     top: 100%;
     left: 50%;
     margin-left: -60px;
+    /*-*/
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
 }
 tool-tip[facing="left"] tool-tip-content {
     top: -5px;
     right: 105%;
+    /*-*/
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
 }       
-tool-tip[facing="righ"] tool-tip-content {
+tool-tip[facing="right"] tool-tip-content {
     top: -5px;
     left: 105%;
+    /*-*/
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+/*tool tip > text on hover -> content visible*/
+tool-tip[facing="top"] tool-tip-text:hover + tool-tip-content {
+    visibility: visible;
+}
+tool-tip[facing="bottom"] tool-tip-text:hover + tool-tip-content {
+    visibility: visible;
+}
+tool-tip[facing="left"] tool-tip-text:hover + tool-tip-content {
+    visibility: visible;
+}
+tool-tip[facing="right"]:hover tool-tip-content {
+    visibility: visible;
 }
 
-
-
+tool-tip[facing="right"]:hover {
+    color: black
+}
   /* Show the tooltip text when you mouse over the tooltip container */
   
