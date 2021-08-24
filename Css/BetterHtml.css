@@ -75,12 +75,9 @@ tool-tip[facing="bottom"] tool-tip-text:hover + tool-tip-content {
 tool-tip[facing="left"] tool-tip-text:hover + tool-tip-content {
     visibility: visible;
 }
-tool-tip[facing="right"]:hover tool-tip-content {
+tool-tip[facing="right"] tool-tip-text:hover + tool-tip-content {
     visibility: visible;
 }
 
-tool-tip[facing="right"]:hover {
-    color: black
-}
   /* Show the tooltip text when you mouse over the tooltip container */
   
