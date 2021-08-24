@@ -1,4 +1,4 @@
-class tooltip extends HTMLElement {
+class tooltip extends HTMLDivElement {
     constructor() {
         super()
     }

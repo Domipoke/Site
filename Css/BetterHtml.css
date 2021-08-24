@@ -1,4 +1,4 @@
-/*tool tip*/
+/*tool tip 
 tool-tip[facing="top"] {
     color: tan
 }
@@ -11,6 +11,7 @@ tool-tip[facing="left"] {
 tool-tip[facing="right"] {
     color: red
 }
+*/
 /* tool tip text*/
 tool-tip[facing="top"] tool-tip-text {
     position: relative;
@@ -31,7 +32,7 @@ tool-tip[facing="right"] tool-tip-text {
 /*tool tip content*/
 tool-tip[facing="top"] tool-tip-content {
     width: 120px;
-    bottom: 100%;
+    top: 0;
     left: 50%;
     margin-left: -60px;
     /*-*/
@@ -41,7 +42,7 @@ tool-tip[facing="top"] tool-tip-content {
 }
 tool-tip[facing="bottom"] tool-tip-content {
     width: 120px;
-    top: 100%;
+    bottom: 0;
     left: 50%;
     margin-left: -60px;
     /*-*/
@@ -51,15 +52,16 @@ tool-tip[facing="bottom"] tool-tip-content {
 }
 tool-tip[facing="left"] tool-tip-content {
     top: -5px;
-    right: 105%;
+    left: 0;
     /*-*/
     visibility: hidden;
     position: absolute;
     z-index: 1;
-}       
+}
 tool-tip[facing="right"] tool-tip-content {
+    --op: attr(style width);
     top: -5px;
-    left: 105%;
+    right: 0;
     /*-*/
     visibility: hidden;
     position: absolute;
