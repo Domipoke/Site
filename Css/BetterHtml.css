@@ -1,18 +1,12 @@
 tool-tip tool-tip-text {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
 tool-tip tool-tip-content {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+
    
     /* Position the tooltip text - see examples below! */
+    visibility: hidden;
     position: absolute;
     z-index: 1;
 }
@@ -22,7 +16,7 @@ tool-tip-text:hover + tool-tip-content {
 tool-tip[facing="top"] {
 
 }
-tool-tip[facing="down"] {
+tool-tip[facing="bottom"] {
 
 }
 tool-tip[facing="left"] {
@@ -30,6 +24,27 @@ tool-tip[facing="left"] {
 }
 tool-tip[facing="righ"] {
     
+}
+
+tool-tip[facing="top"] tool-tip-content {
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+tool-tip[facing="bottom"] tool-tip-content {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+tool-tip[facing="left"] tool-tip-content {
+    top: -5px;
+    right: 105%;
+}       
+tool-tip[facing="righ"] tool-tip-content {
+    top: -5px;
+    left: 105%;
 }
 
 
