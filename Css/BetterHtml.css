@@ -1,18 +1,10 @@
-/*tool tip 
-tool-tip[facing="top"] {
-    color: tan
-}
-tool-tip[facing="bottom"] {
-    color: blue
-}
-tool-tip[facing="left"] {
-    color: lime
-}
-tool-tip[facing="right"] {
-    color: red
-}
+/* TOOL TIP */
+/*
+*   tool-tip
+*   tool-tip-text
+*   tool-tip-content
 */
-/* tool tip text*/
+
 tool-tip[facing="top"] tool-tip-text {
     position: relative;
     display: inline-block;
@@ -29,7 +21,7 @@ tool-tip[facing="right"] tool-tip-text {
     position: relative;
     display: inline-block;
 }
-/*tool tip content*/
+
 tool-tip[facing="top"] tool-tip-content {
     width: 120px;
     top: 0;
@@ -67,7 +59,7 @@ tool-tip[facing="right"] tool-tip-content {
     position: absolute;
     z-index: 1;
 }
-/*tool tip > text on hover -> content visible*/
+
 tool-tip[facing="top"] tool-tip-text:hover + tool-tip-content {
     visibility: visible;
 }
@@ -81,5 +73,98 @@ tool-tip[facing="right"] tool-tip-text:hover + tool-tip-content {
     visibility: visible;
 }
 
-  /* Show the tooltip text when you mouse over the tooltip container */
-  
+/* DIV MENU */
+/*
+*   div-menu
+*   menu-item
+*/
+
+div-menu[type="vertical"] {
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+div-menu[type="vertical"] menu-item {
+    display: block;
+}
+div-menu[type="vertical"] menu-item * {
+    display: block;
+}
+
+
+div-menu[type="horizontal"] {
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+div-menu[type="horizontal"] menu-item {
+    float: left;
+}
+div-menu[type="horizontal"] menu-item * {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+div-menu[type="fixedtop"] {
+list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+div-menu[type="fixedtop"] menu-item {
+    float: left;
+}
+div-menu[type="fixedtop"] menu-item * {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+div-menu[type="fixedbottom"] {
+list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+div-menu[type="fixedbottom"] menu-item {
+    float: left;
+}
+div-menu[type="fixedbottom"] menu-item * {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+div-menu[type="stickytop"] {
+list-style-type: none;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+div-menu[type="stickytop"] menu-item {
+    float: left;
+}
+div-menu[type="stickytop"] menu-item * {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+div-menu[type="stickybottom"] {
+list-style-type: none;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+div-menu[type="stickybottom"] menu-item {
+    float: left;
+}
+div-menu[type="stickybottom"] menu-item * {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
