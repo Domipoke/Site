@@ -3,15 +3,54 @@
         <link href="/Css/BetterHtml.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <div-menu type="">
-            <menu-item>
-                <span>Ciao</span>
+        <style>
+            /*
+            #EEB5EB
+            #C26DBC
+            #C8F4F9
+            #3CACAE
+            //
+            	#2c2f33
+                #23272a
+            */
+            .noselect {
+                -webkit-touch-callout: none; /* iOS Safari */
+                    -webkit-user-select: none; /* Safari */
+                    -khtml-user-select: none; /* Konqueror HTML */
+                    -moz-user-select: none; /* Old versions of Firefox */
+                        -ms-user-select: none; /* Internet Explorer/Edge */
+                            user-select: none; /* Non-prefixed version, currently
+                                                supported by Chrome, Edge, Opera and Firefox */
+            }
+            .LogInBtn {
+
+            }
+            div-menu {
+                width:100%;
+                display: block;
+            }
+            menu-item {
+                float:left;
+                display: flex;
+                background-color: #23272a;
+                border: 3px #23272a solid;
+                color: whitesmoke;
+            }
+            menu-item:hover {
+                color: #2c2f33;
+                background-color:whitesmoke;
+            }
+        </style>
+        <div-menu type="stickytop">
+            <menu-item style="margin-left: 0;">
+                <span>I miei progetti</span>
             </menu-item>
             <menu-item>
-                <span>A</span>
+                <span>Link vari</span>
             </menu-item>
-            <menu-item>
-                <span>Tutti</span>
+
+            <menu-item class="noselect LogInBtn" style="float: right">
+                <span>Log In</span>
             </menu-item>
         </div-menu>
         <script src="/script/BetterHtml.js"></script>
