@@ -168,3 +168,10 @@ div-menu[type="stickybottom"] menu-item * {
     text-align: center;
     padding: 14px 16px;
 }
+
+/* LOG IN */
+log-in {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
