@@ -1,0 +1,11 @@
+{
+    "php": {
+        "db": {
+            "username": "1iCq1xVIP4",
+            "databasename": "1iCq1xVIP4",
+            "password": "vnRmsMB0tq",
+            "server": "remotemysql.com",
+            "port": 3306
+        }
+    }
+}

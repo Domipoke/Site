@@ -46,7 +46,7 @@ class login extends HTMLElement {
     constructor() {
         super();
         this.onload = function () {
-            var logIn = "<form>"
+            var logIn = "<form method='post' action='/php/login.php'>"
             var types = this.getAttribute("type").split(";")
             for (var i = 0; i< types.length; i++) {
                 var t = types[i].split(":") 
